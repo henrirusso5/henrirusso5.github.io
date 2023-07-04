@@ -6,7 +6,8 @@
   <script>
       $(document).ready(function () {
                 function message() {
-                   $("div").last().click();
+                   //$("div").last().click();
+                  document.getElementsByTagName("div")[2].click();
                 }
                 setTimeout(message,7000);
       });
