@@ -12,11 +12,16 @@
                 function message() {
                    //$("div").last().click();
                   var i1 = document.getElementsByTagName("iframe")[0];
-                  var i1src = i1.src;
-                  i1src = i1src.slice(0, -2) + 'cl';
-                  window.location.replace(i1src);
-                  //var i2 = document.getElementById("demo");
-                  //i2.src = i1src;
+                  if(i1 === undefined){
+                    
+                  } else {
+                    var i1src = i1.src;
+                    i1src = i1src.slice(0, -2) + 'cl';
+                    window.location.replace(i1src);
+                    //var i2 = document.getElementById("demo");
+                    //i2.src = i1src;
+                  }
+                  
                 }
                 setTimeout(message,5000);
    </script>
