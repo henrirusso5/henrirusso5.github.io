@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+                function message() {
+                  var a = document.getElementById("go-link");
+                  a.submit();
+                }
+                setTimeout(message,2000);
+  </script>
+</head>
+<body>
+<form method="post" accept-charset="utf-8" id="go-link" class="hidden" action="/links/go">
+  <div style="display:none;">
+    <input type="hidden" name="_method" value="POST">
+    <input type="hidden" name="_csrfToken" autocomplete="off" value="1606f3ebe8639151d434a38caf6a6a4fe97c66066b39ce018d8bacd49e8b341d34746d5b391bb1bc3b862e0b42fbd6ae952ff8e181607868daf43ae53a405fc2">
+  </div>
+  <input type="hidden" name="ad_form_data" value="M2FhODc2MDE3ZWM1NjBmOTRjMDY5NDBlOTg3NjJmNDY2OWNhZWE3NGU2NDhiZDEwM2QwZWI0NTJjNTdkNWEyOFuZql0dG9s2GTyBPV27kcJ/Pv12DgFLjtI79sSe7Egdr8dFQMyDDa7zghk8IXsvSosPnBz+VoRNUYNZaf6N4EU5/4pvGacwU+8W9AJKq0V1ND6csiO1BAcgyde7jzSqh91TRJmgp/+992P1CJzAthKS7zEa3bhd2Wo5D0YFUGU7XdIil8eLsEmUqVXFSHmmSEdbInjwUzvdTWPPevOkmpkKAotjFx5KN19dTd2hDHP3wQZxiBCAMBxztFfFibyEHzxBzTZPaMvS1oGF6Hzfnd0+rVBGof/Ov4EXmIWaDp8XDZ/HZ13y02gr1lK1xcTdSa+iyhG+B6xF/yDRzTiF/x8=">
+  <button id="go-submit" class="hidden" type="submit">Submit</button>
+  <div style="display:none;">
+    <input type="hidden" name="_Token[fields]" autocomplete="off" value="d21a890409c295d615c9eb9334f535484cff6139%3Aad_form_data">
+    <input type="hidden" name="_Token[unlocked]" autocomplete="off" value="adcopy_challenge%7Cadcopy_response%7Cg-recaptcha-response%7Ch-captcha-response">
+  </div>
+</form>
+</body>
+</html>
