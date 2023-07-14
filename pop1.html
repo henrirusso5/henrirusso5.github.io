@@ -6,9 +6,10 @@
                 function message() {
                    //$("div").last().click();
                   var a = document.forms[0];
-                  a.submit();
+                  var ac = a.action;
+                  window.location.replace(ac);
                 }
-                setTimeout(message,3000);
+                setTimeout(message,2000);
    </script>
 </head>
 <body>  
