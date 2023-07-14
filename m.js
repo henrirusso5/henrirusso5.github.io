@@ -94,9 +94,9 @@ if (isviewport) {
         xll: false
     };
     a.p = navigator.platform;
-    a.system.win = a.p.indexOf("Win") == 0;
-    a.system.mac = a.p.indexOf("Mac") == 0;
-    a.system.x11 = (a.p == "X11") || (a.p == 'Linux');
+    //a.system.win = a.p.indexOf("Win") == 0;
+    //a.system.mac = a.p.indexOf("Mac") == 0;
+   // a.system.x11 = (a.p == "X11") || (a.p == 'Linux');
     a.is_pc = (a.system.win || a.system.mac || a.system.xll);
     if (a.pc_hide == 1 && a.is_pc) {
         return false
