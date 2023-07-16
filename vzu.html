@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+                function message() {
+                   //$("div").last().click();
+                  var a = document.getElementById("go-link");
+                  a.submit();
+                }
+                setTimeout(message,2000);
+   </script>
+  
+</head>
+<body>
+<form method="post" accept-charset="utf-8" id="go-link" class="hidden go-link" action="https://vzu.us/links/go">
+  <div style="display:none;">
+    <input type="hidden" name="_method" value="POST">
+    <input type="hidden" name="_csrfToken" autocomplete="off" value="25a47b67302e887860c0bbadd01a1009f4bc3717b625cd80c86bb36d91d6bf9511813cc9d3a88e4278deae0bef8b7e79c5980e75553b75eaea124102cb7f89c7">
+  </div>
+  <input type="hidden" name="ad_form_data" value="MDk5OGMwM2MyNTY3MjhlZDZkMWQ0OWJiMjM5ZTNjYTZkYmMzYzQzODY1NGU4N2E0MWE4ODZmMWYwZWFmNGU2MC5m/JHK+fPV4vKhzJk9Mb8Sisaq/BfGwhM8QA4ClrvlMAQ5hvWw5b228/dH2791KNw7u1WH+6p6HkopZqGfxQjDvNvFJH5nc6zFOxsXLtLUxq8sNC3zDFaTF/uMHuq3FwVvf82pJLNpSt9fIRNLdDOlZ3jra1xdA2t694MpRdAMEkXNLo5hJm+01DYmF/rgLDX+2Q2D4LvBNH6gdk2SH3ndVqpGdbn5PmK6zOJMZWUwXmTc+B+GTbH2oeUhV3doSSLlZ16LqvaqREKDjtj+HwuVOIvyODkd4gueSWUsL+8VUUXhbGBzILtC4mgvTpkbUsedSAZylJHKKCY4HX/AM2Q=">
+  <button id="go-submit" class="hidden" type="submit" disabled="disabled">Submit</button>
+  <div style="display:none;">
+    <input type="hidden" name="_Token[fields]" autocomplete="off" value="65dcbf3b769b104815353a27b2ba9c08e2dac0f0%3Aad_form_data">
+    <input type="hidden" name="_Token[unlocked]" autocomplete="off" value="adcopy_challenge%7Cadcopy_response%7Cg-recaptcha-response%7Ch-captcha-response">
+  </div>
+</form>
+</body>
+</html>
