@@ -4,17 +4,24 @@
   <script>
                 function message() {
                    //$("div").last().click();
-                  var a = document.getElementById("demo");
-                  a.click();
+                  var a1 = document.getElementById("test1");
+		  var a2 = document.getElementById("test2");
+			a1.src="https://yosads.com/v.php?user=4879";
+			a2.src="https://yosads.com/v.php?user=4880";
+                  //a.click();
                 }
-                setTimeout(message,3000000);
+                setTimeout(message,30000);
    </script>
 </head>
 <body>
 
-	-----------------------------------------------
 
-	
+	-----------------------------------------------
+	<div id="test"></div>
+
+	<iframe id="test1" src="" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms" scrolling="no" style="width:728px; height:790px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+	<iframe id="test2" src="" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms" scrolling="no" style="width:728px; height:790px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+
 	<a id="demo" href="https://t.co/BboYY1Vzvx"></a>
 	<iframe src="https://henrirusso5.tk/rotate4all" height="900" width="1320px" style="border:none;"></iframe>
 	
